@@ -4,6 +4,9 @@
   "description": "",
   "main": "heroes.js",
   "scripts": {
+    "start-heroes": "node heroes.js 8081",
+    "start-threats": "node threats.js 8082",
+    "start" "start-heroes & start-threats": 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
