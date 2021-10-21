@@ -6,7 +6,8 @@
   "scripts": {
     "start-heroes": "node heroes.js 8081",
     "start-threats": "node threats.js 8082",
-    "start": "start-heroes && start-threats": 
+    "start": "start-heroes && start-threats",
+    "dev": "concurrently --kill-others \"npm run start-heroes\" \"npm run start-threats\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +17,8 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0"
   }
 }
