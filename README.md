@@ -5,6 +5,6 @@ Heroes service
 
 #Git clone the repo then
 npm install
-npm start
+npm run dev
 
 to execute both the service at 8081 and 8082 ports
